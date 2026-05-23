@@ -36,10 +36,10 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         
-        <!-- Vault API 仓库 -->
+        <!-- JitPack 仓库（用于VaultAPI） -->
         <repository>
-            <id>vault-repo</id>
-            <url>https://nexus.hc.to/content/repositories/pub_releases</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -52,7 +52,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Vault API for economy support -->
+        <!-- Vault API for economy support - 使用JitPack -->
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
