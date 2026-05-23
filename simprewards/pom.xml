@@ -24,7 +24,7 @@
         
         <!-- 依赖版本 -->
         <spigot.version>1.20.4-R0.1-SNAPSHOT</spigot.version>
-        <vault.version>1.7.3</vault.version>
+        <vault.version>1.7</vault.version>  <!-- 修正：使用实际存在的版本 1.7 -->
         <sqlite.version>3.42.0.0</sqlite.version>
         <mysql.version>8.0.33</mysql.version>
     </properties>
@@ -36,10 +36,10 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         
-        <!-- JitPack 仓库（用于VaultAPI） -->
+        <!-- Maven Central（VaultAPI 1.7 在这里） -->
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
         </repository>
     </repositories>
 
@@ -52,11 +52,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Vault API for economy support - 使用JitPack -->
+        <!-- Vault API for economy support - 使用实际存在的 1.7 版本 -->
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
-            <version>${vault.version}</version>
+            <version>${vault.version}</version>  <!-- 现在是 1.7 -->
             <scope>provided</scope>
         </dependency>
 
