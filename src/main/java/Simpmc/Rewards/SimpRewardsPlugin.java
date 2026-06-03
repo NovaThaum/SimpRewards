@@ -1,6 +1,8 @@
 package Simpmc.Rewards;
 
+import Simpmc.Rewards.command.RewardCommand;
 import Simpmc.Rewards.data.DataManager;
+import Simpmc.Rewards.listener.InventoryListener;
 import Simpmc.Rewards.listener.JoinListener;
 import Simpmc.Rewards.listener.QuitListener;
 import Simpmc.Rewards.task.OnlineTracker;
@@ -24,6 +26,10 @@ public class SimpRewardsPlugin extends JavaPlugin {
 
         dataManager.init();
 
+        /*
+         * 注册监听器
+         */
+
         getServer().getPluginManager().registerEvents(
                 new JoinListener(this),
                 this
@@ -33,6 +39,23 @@ public class SimpRewardsPlugin extends JavaPlugin {
                 new QuitListener(this),
                 this
         );
+
+        getServer().getPluginManager().registerEvents(
+                new InventoryListener(this),
+                this
+        );
+
+        /*
+         * 注册命令
+         */
+
+        getCommand("reward").setExecutor(
+                new RewardCommand()
+        );
+
+        /*
+         * 在线统计任务
+         */
 
         this.onlineTracker = new OnlineTracker(this);
 
