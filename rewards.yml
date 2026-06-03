@@ -1,0 +1,57 @@
+daily-sign:
+
+  base:
+
+    reward1:
+      type: item
+      material: DIAMOND
+      amount: 1
+
+    reward2:
+      type: xp
+      amount: 100
+
+  streak:
+
+    3:
+
+      reward1:
+        type: command
+        command: "say %player% 连签3天"
+
+    7:
+
+      reward1:
+        type: item
+        material: NETHERITE_INGOT
+        amount: 1
+
+total-online:
+
+  30:
+
+    reward1:
+      type: item
+      material: DIAMOND
+      amount: 3
+
+daily-task:
+
+  required-minutes: 30
+
+  rewards:
+
+    reward1:
+      type: xp
+      amount: 500
+
+weekly-task:
+
+  required-minutes: 300
+
+  rewards:
+
+    reward1:
+      type: item
+      material: EMERALD
+      amount: 5
