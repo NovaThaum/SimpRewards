@@ -1,0 +1,7 @@
+name: SimpRewards
+version: '1.0-SNAPSHOT'
+main: org.simpmc.simpRewards.SimpRewards
+api-version: '1.21'
+authors: [ Chroniflow ]
+description: A Simple Reward Plugin
+website: simpmc.org
