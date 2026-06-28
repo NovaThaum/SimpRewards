@@ -1,0 +1,80 @@
+timezone: server
+
+sign:
+  auto-claim-on-first-join: false
+  streak-cycle: 7
+  allow-makeup: false
+  rewards:
+    base:
+      - type: item
+        material: BREAD
+        amount: 8
+        name: "&e每日面包"
+        lore:
+          - "&7来自每日签到。"
+    streaks:
+      3:
+        - type: exp
+          amount: 50
+      7:
+        - type: item
+          material: DIAMOND
+          amount: 1
+          name: "&b七日连签奖励"
+
+online:
+  tick-minutes: 1
+
+daily-task:
+  target-minutes: 30
+  rewards:
+    - type: exp
+      amount: 100
+    - type: money
+      amount: 100.0
+
+weekly-task:
+  week-start: MONDAY
+  target-minutes: 300
+  rewards:
+    - type: item
+      material: EMERALD
+      amount: 3
+      name: "&a每周在线奖励"
+
+total-online:
+  milestones:
+    30:
+      rewards:
+        - type: item
+          material: IRON_INGOT
+          amount: 8
+        - type: money
+          amount: 50.0
+    60:
+      rewards:
+        - type: item
+          material: GOLD_INGOT
+          amount: 4
+    120:
+      rewards:
+        - type: item
+          material: DIAMOND
+          amount: 2
+
+active-streak:
+  active-threshold-minutes: 30
+  milestones:
+    3:
+      rewards:
+        - type: exp
+          amount: 150
+    7:
+      rewards:
+        - type: item
+          material: NETHERITE_SCRAP
+          amount: 1
+
+storage:
+  type: yaml
+  autosave-minutes: 5

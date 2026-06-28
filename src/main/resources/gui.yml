@@ -1,0 +1,190 @@
+menu:
+  title: "&6奖励中心"
+  size: 36
+
+items:
+  overview-sign:
+    slot: 0
+    material: CLOCK
+    name: "&e每日签到"
+    lore:
+      - "&7今日：%sign_status%"
+      - "&7连续签到：&f%sign_streak% 天"
+  overview-total:
+    slot: 1
+    material: DIAMOND_SWORD
+    name: "&b累计在线"
+    lore:
+      - "&7总在线：&f%total_minutes% 分钟"
+      - "&7下一档：&f%next_total_milestone% 分钟"
+  overview-daily:
+    slot: 2
+    material: EMERALD
+    name: "&a每日任务"
+    lore:
+      - "&7今日在线：&f%daily_minutes% / %daily_target% 分钟"
+  overview-weekly:
+    slot: 3
+    material: NETHERITE_INGOT
+    name: "&d每周任务"
+    lore:
+      - "&7本周在线：&f%weekly_minutes% / %weekly_target% 分钟"
+  overview-active:
+    slot: 4
+    material: ENCHANTED_BOOK
+    name: "&5连续在线"
+    lore:
+      - "&7连续活跃：&f%active_streak% 天"
+      - "&7下一档：&f%next_active_milestone% 天"
+
+  daily-sign:
+    slot: 9
+    locked:
+      material: GOLD_INGOT
+      name: "&e每日签到"
+      lore:
+        - "&7连续签到：&f%sign_streak% 天"
+        - "&a点击领取今日签到奖励。"
+    claimable:
+      material: GOLD_INGOT
+      name: "&e每日签到"
+      lore:
+        - "&7连续签到：&f%sign_streak% 天"
+        - "&a点击领取今日签到奖励。"
+    claimed:
+      material: EMERALD_BLOCK
+      name: "&a今日已签到"
+      lore:
+        - "&7连续签到：&f%sign_streak% 天"
+
+  total-online:
+    slot: 10
+    locked:
+      material: CLOCK
+      name: "&b累计在线"
+      lore:
+        - "&7总在线：&f%total_minutes% 分钟"
+        - "&7下一档：&f%next_total_milestone% 分钟"
+        - "&c还需要 %total_remaining% 分钟。"
+    claimable:
+      material: BLAZE_ROD
+      name: "&b累计在线奖励"
+      lore:
+        - "&7已达到：&f%claimable_total_milestone% 分钟"
+        - "&a点击领取。"
+    claimed:
+      material: GRAY_DYE
+      name: "&7累计在线"
+      lore:
+        - "&7暂无可领取档位。"
+
+  daily-task:
+    slot: 11
+    locked:
+      material: DAYLIGHT_DETECTOR
+      name: "&a每日在线任务"
+      lore:
+        - "&7今日在线：&f%daily_minutes% / %daily_target% 分钟"
+        - "&c还需要 %daily_remaining% 分钟。"
+    claimable:
+      material: LIME_DYE
+      name: "&a每日在线任务"
+      lore:
+        - "&7今日在线：&f%daily_minutes% / %daily_target% 分钟"
+        - "&a点击领取。"
+    claimed:
+      material: GRAY_DYE
+      name: "&7每日任务已领取"
+      lore:
+        - "&7明天再来。"
+
+  weekly-task:
+    slot: 12
+    locked:
+      material: PAPER
+      name: "&d每周在线任务"
+      lore:
+        - "&7本周在线：&f%weekly_minutes% / %weekly_target% 分钟"
+        - "&c还需要 %weekly_remaining% 分钟。"
+    claimable:
+      material: NETHERITE_INGOT
+      name: "&d每周在线任务"
+      lore:
+        - "&7本周在线：&f%weekly_minutes% / %weekly_target% 分钟"
+        - "&a点击领取。"
+    claimed:
+      material: GRAY_DYE
+      name: "&7每周任务已领取"
+      lore:
+        - "&7下周再来。"
+
+  active-streak:
+    slot: 13
+    locked:
+      material: DIAMOND
+      name: "&5连续活跃奖励"
+      lore:
+        - "&7连续活跃：&f%active_streak% 天"
+        - "&7下一档：&f%next_active_milestone% 天"
+    claimable:
+      material: DIAMOND
+      name: "&5连续活跃奖励"
+      lore:
+        - "&7已达到：&f%claimable_active_milestone% 天"
+        - "&a点击领取。"
+    claimed:
+      material: GRAY_DYE
+      name: "&7连续活跃"
+      lore:
+        - "&7暂无可领取档位。"
+
+  help:
+    slot: 18
+    material: WRITABLE_BOOK
+    name: "&f说明"
+    lore:
+      - "&7所有奖励均需手动点击领取。"
+      - "&7在线时长每分钟统计一次。"
+
+  reset:
+    slot: 19
+    material: OAK_SIGN
+    name: "&f重置时间"
+    lore:
+      - "&7每日任务：每天 00:00"
+      - "&7每周任务：每周一 00:00"
+
+  close:
+    slot: 26
+    material: BARRIER
+    name: "&c关闭"
+    lore: []
+
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+    slots:
+      - 5
+      - 6
+      - 7
+      - 8
+      - 14
+      - 15
+      - 16
+      - 17
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35

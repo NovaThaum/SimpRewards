@@ -5,3 +5,27 @@ api-version: '1.21'
 authors: [ Chroniflow ]
 description: A Simple Reward Plugin
 website: simpmc.org
+softdepend:
+  - Vault
+commands:
+  reward:
+    description: Open the reward menu
+    usage: /reward
+    permission: simprewards.use
+  daily:
+    description: Open the daily sign calendar
+    usage: /daily
+    permission: simprewards.use
+permissions:
+  simprewards.use:
+    description: Allows opening the reward menu
+    default: true
+  simprewards.admin:
+    description: Allows managing SimpRewards
+    default: op
+  simprewards.reload:
+    description: Allows reloading SimpRewards configuration
+    default: op
+  simprewards.stats:
+    description: Allows viewing reward stats
+    default: op
